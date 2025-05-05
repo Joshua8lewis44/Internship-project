@@ -9,7 +9,7 @@ class SubscriptionPage:
 
     def is_page_title_visible(self):
         return self.wait.until(
-            EC.visibility_of_element_located((By.XPATH, "//div[contains(text(), 'Subscription & payments')]"))
+            EC.visibility_of_element_located((By.CSS_SELECTOR, ".lotion-your-h3--price"))
         ).is_displayed()
 
     def is_back_button_visible(self):
